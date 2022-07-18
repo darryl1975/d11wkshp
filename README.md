@@ -49,3 +49,17 @@ git checkout develop
 git merge master (merge changesd done in master branch into develop branch)
 
 git push -u origin develop
+
+
+### deploy to heroku from master branch always
+git branch
+
+git checkout master
+
+heroku login
+
+heroku apps:create
+
+git remote -v
+
+git push -u heroku master
